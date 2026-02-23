@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rami Fadel — IT Support Specialist</title>
-  <meta name="description" content="Rami Fadel — IT Support Specialist. Help Desk, Desktop Support, Technical Support." />
+  <meta name="description" content="Rami Fadel — IT Support Specialist based in the Bay Area. Help Desk, Desktop Support, Technical Support." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- ===== NAV ===== -->
-  <nav>
-    <span class="nav-logo">RF//</span>
+  <nav id="navbar">
+    <span class="nav-logo">Rami Fadel</span>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -24,25 +24,27 @@
 
   <!-- ===== HERO ===== -->
   <section id="hero">
-    <p class="hero-tag">// Available for hire &nbsp;&bull;&nbsp; Open to remote</p>
-    <h1 class="glitch-name" data-text="RAMI FADEL">RAMI FADEL</h1>
-    <p class="hero-subtitle">IT Support Specialist</p>
-    <p class="hero-typed">
-      <span id="typed-text"></span><span class="cursor"></span>
-    </p>
-    <div class="hero-cta">
-      <a href="#contact" class="btn btn-primary">Contact Me</a>
-      <a href="https://linkedin.com/in/rami-fadel-514600245" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+    <div class="hero-inner reveal">
+      <p class="hero-tag">Available for hire &nbsp;&bull;&nbsp; Open to remote</p>
+      <h1 class="hero-name">Rami Fadel</h1>
+      <p class="hero-subtitle">IT Support Specialist</p>
+      <p class="hero-typed">
+        <span id="typed-text"></span><span class="cursor"></span>
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+        <a href="https://linkedin.com/in/rami-fadel-514600245" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      </div>
     </div>
   </section>
 
   <!-- ===== ABOUT ===== -->
-  <section id="about">
+  <section id="about" class="section-alt">
     <div class="section-inner">
-      <h2 class="section-title">About</h2>
-      <div class="section-line"></div>
+      <h2 class="section-title reveal">About</h2>
+      <div class="section-line reveal"></div>
       <div class="about-grid">
-        <div class="about-text">
+        <div class="about-text reveal">
           <p>
             IT professional with hands-on experience across Help Desk, Desktop Support, and IT operations.
             Currently working as an IT Technician at Skydio, supporting internal users across macOS, Windows, and Linux environments.
@@ -57,19 +59,19 @@
           </p>
         </div>
         <div class="about-stats">
-          <div class="stat-item">
+          <div class="stat-item reveal">
             <div class="stat-label">Current Role</div>
             <div class="stat-value">IT Technician @ Skydio</div>
           </div>
-          <div class="stat-item">
+          <div class="stat-item reveal">
             <div class="stat-label">Languages</div>
             <div class="stat-value">English (Native) &bull; Arabic (Native)</div>
           </div>
-          <div class="stat-item">
+          <div class="stat-item reveal">
             <div class="stat-label">Degree</div>
             <div class="stat-value">B.S. Computer Science — CSUEB</div>
           </div>
-          <div class="stat-item">
+          <div class="stat-item reveal">
             <div class="stat-label">Certifications</div>
             <div class="stat-value">CISCO IT Essentials &bull; Linux SysAdmin &bull; YearUp IT</div>
           </div>
@@ -81,97 +83,101 @@
   <!-- ===== SKILLS ===== -->
   <section id="skills">
     <div class="section-inner">
-      <h2 class="section-title">Skills</h2>
-      <div class="section-line"></div>
-      <div class="skills-grid">
+      <h2 class="section-title reveal">Skills</h2>
+      <div class="section-line reveal"></div>
+      <div class="network-wrapper">
+        <svg id="network-svg" aria-hidden="true"></svg>
+        <div class="skills-grid">
 
-        <div class="skill-category">
-          <div class="skill-category-name">Technical Tools</div>
-          <div class="skill-tags">
-            <span class="skill-tag">ServiceNow</span>
-            <span class="skill-tag">Jira</span>
-            <span class="skill-tag">Confluence</span>
-            <span class="skill-tag">VMware Workstation</span>
-            <span class="skill-tag">VirtualBox</span>
-            <span class="skill-tag">Proxmox</span>
-            <span class="skill-tag">TeamViewer</span>
-            <span class="skill-tag">Zoom</span>
+          <div class="skill-category reveal" data-node="0">
+            <div class="skill-category-name">Technical Tools</div>
+            <div class="skill-tags">
+              <span class="skill-tag">ServiceNow</span>
+              <span class="skill-tag">Jira</span>
+              <span class="skill-tag">Confluence</span>
+              <span class="skill-tag">VMware Workstation</span>
+              <span class="skill-tag">VirtualBox</span>
+              <span class="skill-tag">Proxmox</span>
+              <span class="skill-tag">TeamViewer</span>
+              <span class="skill-tag">Zoom</span>
+            </div>
           </div>
-        </div>
 
-        <div class="skill-category">
-          <div class="skill-category-name">Systems &amp; Software</div>
-          <div class="skill-tags">
-            <span class="skill-tag">macOS</span>
-            <span class="skill-tag">Windows 10/11</span>
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">Microsoft 365</span>
-            <span class="skill-tag">Google Workspace</span>
-            <span class="skill-tag">Teams</span>
+          <div class="skill-category reveal" data-node="1">
+            <div class="skill-category-name">Systems &amp; Software</div>
+            <div class="skill-tags">
+              <span class="skill-tag">macOS</span>
+              <span class="skill-tag">Windows 10/11</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Microsoft 365</span>
+              <span class="skill-tag">Google Workspace</span>
+              <span class="skill-tag">Teams</span>
+            </div>
           </div>
-        </div>
 
-        <div class="skill-category">
-          <div class="skill-category-name">Support &amp; Troubleshooting</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Remote Desktop</span>
-            <span class="skill-tag">Hardware Diagnostics</span>
-            <span class="skill-tag">Software Installation</span>
-            <span class="skill-tag">User Account Mgmt</span>
-            <span class="skill-tag">Password Resets</span>
-            <span class="skill-tag">Printers &amp; Peripherals</span>
+          <div class="skill-category reveal" data-node="2">
+            <div class="skill-category-name">Support &amp; Troubleshooting</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Remote Desktop</span>
+              <span class="skill-tag">Hardware Diagnostics</span>
+              <span class="skill-tag">Software Installation</span>
+              <span class="skill-tag">User Account Mgmt</span>
+              <span class="skill-tag">Password Resets</span>
+              <span class="skill-tag">Printers &amp; Peripherals</span>
+            </div>
           </div>
-        </div>
 
-        <div class="skill-category">
-          <div class="skill-category-name">Directory &amp; Security</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Active Directory</span>
-            <span class="skill-tag">MFA</span>
-            <span class="skill-tag">2SV</span>
-            <span class="skill-tag">Apple ID / SSO</span>
+          <div class="skill-category reveal" data-node="3">
+            <div class="skill-category-name">Directory &amp; Security</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Active Directory</span>
+              <span class="skill-tag">MFA</span>
+              <span class="skill-tag">2SV</span>
+              <span class="skill-tag">Apple ID / SSO</span>
+            </div>
           </div>
-        </div>
 
-        <div class="skill-category">
-          <div class="skill-category-name">Networking</div>
-          <div class="skill-tags">
-            <span class="skill-tag">TCP/IP</span>
-            <span class="skill-tag">DNS</span>
-            <span class="skill-tag">DHCP</span>
-            <span class="skill-tag">LAN/WAN</span>
-            <span class="skill-tag">VPN</span>
-            <span class="skill-tag">Switches / Routers</span>
+          <div class="skill-category reveal" data-node="4">
+            <div class="skill-category-name">Networking</div>
+            <div class="skill-tags">
+              <span class="skill-tag">TCP/IP</span>
+              <span class="skill-tag">DNS</span>
+              <span class="skill-tag">DHCP</span>
+              <span class="skill-tag">LAN/WAN</span>
+              <span class="skill-tag">VPN</span>
+              <span class="skill-tag">Switches / Routers</span>
+            </div>
           </div>
-        </div>
 
-        <div class="skill-category">
-          <div class="skill-category-name">Certifications</div>
-          <div class="skill-tags">
-            <span class="skill-tag">
-              <a href="https://drive.google.com/file/d/1mCmkOI2C-hGBYDDelBexYiI50HxRdUgD/view" target="_blank" rel="noopener">CISCO IT Essentials</a>
-            </span>
-            <span class="skill-tag">
-              <a href="https://drive.google.com/file/d/1UlqSohmaSY8X0zYsnwWhRp6e_R7aSEzh/view" target="_blank" rel="noopener">Linux SysAdmin</a>
-            </span>
-            <span class="skill-tag">
-              <a href="https://drive.google.com/file/d/1tQr7Ab81C1nGKRM-DNIUpHlJ7RgFKFTB/view" target="_blank" rel="noopener">YearUp IT Track</a>
-            </span>
+          <div class="skill-category reveal" data-node="5">
+            <div class="skill-category-name">Certifications</div>
+            <div class="skill-tags">
+              <span class="skill-tag">
+                <a href="https://drive.google.com/file/d/1mCmkOI2C-hGBYDDelBexYiI50HxRdUgD/view" target="_blank" rel="noopener">CISCO IT Essentials</a>
+              </span>
+              <span class="skill-tag">
+                <a href="https://drive.google.com/file/d/1UlqSohmaSY8X0zYsnwWhRp6e_R7aSEzh/view" target="_blank" rel="noopener">Linux SysAdmin</a>
+              </span>
+              <span class="skill-tag">
+                <a href="https://drive.google.com/file/d/1tQr7Ab81C1nGKRM-DNIUpHlJ7RgFKFTB/view" target="_blank" rel="noopener">YearUp IT Track</a>
+              </span>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===== EXPERIENCE ===== -->
-  <section id="experience">
+  <section id="experience" class="section-alt">
     <div class="section-inner">
-      <h2 class="section-title">Experience</h2>
-      <div class="section-line"></div>
+      <h2 class="section-title reveal">Experience</h2>
+      <div class="section-line reveal"></div>
       <div class="timeline">
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
           <div class="job-header">
             <span class="job-company">Skydio</span>
             <span class="job-dates">May 2025 – Current</span>
@@ -187,7 +193,8 @@
           </ul>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
           <div class="job-header">
             <span class="job-company">Crosslink</span>
             <span class="job-dates">Nov 2024 – April 2025</span>
@@ -201,7 +208,8 @@
           </ul>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
           <div class="job-header">
             <span class="job-company">Apple</span>
             <span class="job-dates">Feb 2024 – Aug 2024</span>
@@ -215,7 +223,8 @@
           </ul>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
           <div class="job-header">
             <span class="job-company">Waymo</span>
             <span class="job-dates">Nov 2020 – June 2023</span>
@@ -236,11 +245,11 @@
   <!-- ===== EDUCATION ===== -->
   <section id="education">
     <div class="section-inner">
-      <h2 class="section-title">Education</h2>
-      <div class="section-line"></div>
+      <h2 class="section-title reveal">Education</h2>
+      <div class="section-line reveal"></div>
       <div class="edu-grid">
 
-        <div class="edu-card">
+        <div class="edu-card reveal">
           <div class="edu-school">Year Up</div>
           <div class="edu-program">Track Training: IT / Help Desk</div>
           <div class="edu-dates">Aug 2023 – Aug 2024 &nbsp;&bull;&nbsp; Pleasant Hill, CA</div>
@@ -252,7 +261,7 @@
           </ul>
         </div>
 
-        <div class="edu-card">
+        <div class="edu-card reveal">
           <div class="edu-school">California State University, East Bay</div>
           <div class="edu-program">B.S. Computer Science</div>
           <div class="edu-dates">Graduated May 2023 &nbsp;&bull;&nbsp; Hayward, CA</div>
@@ -266,30 +275,15 @@
   </section>
 
   <!-- ===== PROJECTS ===== -->
-  <section id="projects">
+  <section id="projects" class="section-alt">
     <div class="section-inner">
-      <h2 class="section-title">Projects</h2>
-      <div class="section-line"></div>
+      <h2 class="section-title reveal">Projects</h2>
+      <div class="section-line reveal"></div>
       <div class="projects-grid">
 
-        <div class="project-card">
-          <span class="project-status active">Active</span>
-          <div class="project-name">Automated Job Search Pipeline</div>
-          <div class="project-desc">
-            n8n workflow that scrapes Indeed via Apify, scores job listings with GPT, and auto-generates tailored resumes and cover letters as Google Docs — all on a schedule.
-          </div>
-          <div class="project-tags">
-            <span class="project-tag">n8n</span>
-            <span class="project-tag">Apify</span>
-            <span class="project-tag">GPT-4o</span>
-            <span class="project-tag">Google Drive API</span>
-            <span class="project-tag">Automation</span>
-          </div>
-        </div>
-
-        <div class="project-card">
+        <div class="project-card reveal">
           <span class="project-status">Coming Soon</span>
-          <div class="project-name">Project 2</div>
+          <div class="project-name">Project 1</div>
           <div class="project-desc">
             In progress — stay tuned.
           </div>
@@ -298,9 +292,9 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card reveal">
           <span class="project-status">Coming Soon</span>
-          <div class="project-name">Project 3</div>
+          <div class="project-name">Project 2</div>
           <div class="project-desc">
             In progress — stay tuned.
           </div>
@@ -316,12 +310,11 @@
   <!-- ===== CONTACT ===== -->
   <section id="contact">
     <div class="section-inner">
-      <h2 class="section-title">Contact</h2>
-      <div class="section-line"></div>
-      <div class="contact-wrapper">
+      <h2 class="section-title reveal">Contact</h2>
+      <div class="section-line reveal"></div>
+      <div class="contact-wrapper reveal">
         <p class="contact-intro">
-          Open to IT Support, Help Desk, Desktop Support, and Technical Support roles.
-          Remote-friendly.
+          Open to IT Support, Help Desk, Desktop Support, and Technical Support roles in the Bay Area.
           Feel free to reach out.
         </p>
         <div class="contact-links">
@@ -338,12 +331,13 @@
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© 2026 RAMI FADEL &nbsp;//&nbsp; RFADELCLOUD.COM</p>
+    <p>© 2026 Rami Fadel</p>
   </footer>
 
   <!-- ===== THEME SWITCHER ===== -->
-  <a href="/pro" class="theme-switcher" title="Switch to Professional Mode">&#128188; Pro Mode</a>
+  <a href="/" class="theme-switcher" title="Switch to Night City Mode">⚡ Night City Mode</a>
 
+  <canvas id="bg-canvas"></canvas>
   <script src="script.js"></script>
 </body>
 </html>
